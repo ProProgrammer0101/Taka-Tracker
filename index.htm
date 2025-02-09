@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taka Tracker</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anek+Bangla:wght@100..800&family=Baloo+Da+2:wght@400..800&display=swap" rel="stylesheet">
+    <!-- Anek Bangla, Baloo Da 2 -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header>
+        <h1>টাকা ট্রেকার</h1>
+        <h4>টাকার নিয়ন্ত্রক!</h4>
+
+        <nav>
+            <ul>
+                <li><a href="index.htm" class="active">ব্যবহার করুন</a></li>
+                <li><a href="#">টিউটোরিয়াল</a></li>
+                <li><a href="#">পূর্বের হিসাব</a></li>
+                <li><a href="#">যোগাযোগ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="item-adding">
+            <h1>আপনার টাকা হিসাব করুন</h1>
+            <div class="input-box">
+                <label for="amount">টাকার পরিমান</label>
+                <div class="amount-currency">
+                    <input type="number" name="amount" id="amount" required>
+                    <select id="currency" name="currency">
+                        <option value="taka" selected>&#2547</option>
+                        <option value="dollars" selected>&#36</option>
+                     </select>
+                </div>
+            </div>
+            <div class="input-box">
+                <label for="description">জিনিসের নাম</label>
+                <input type="text" name="item" id="item" required>
+            </div>
+            <div class="buttons">
+                <button type="button" onclick="addItemExpense()"class="submit">সাবমিট</button>
+                <button type="button" onclick="removeItem()" class="remove">মুছুন</button>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
